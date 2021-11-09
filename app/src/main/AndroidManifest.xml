@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Final_project">
         <activity
+            android:name=".MainActivity8"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity5"
             android:exported="true" />
         <activity

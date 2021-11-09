@@ -39,8 +39,10 @@ public class MainActivity2 extends AppCompatActivity {
                     break;
                 case R.id.graph:
                     fragment=new GraphFragment();
+                    break;
                 case R.id.friend:
                     fragment=new FriendFragment();
+                    break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
             return true;
@@ -57,9 +59,29 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent=new Intent(this,MainActivity5.class);
         startActivity(intent);
     }
-
+    public void timeline(View view){
+        Fragment fragment=new TimelineFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+    }
+    public void progress(View view){
+        Fragment fragment=new ProgressFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+    }
+    public void addfood(View view){
+        Intent intent=new Intent(this,MainActivity6.class);
+        startActivity(intent);
+    }
+    public void exercise(View view){
+        Intent intent=new Intent(this,MainActivity7.class);
+        startActivity(intent);
+    }
+    public void plan(View view){
+        Intent intent=new Intent(this,MainActivity8.class);
+        startActivity(intent);
+    }
     public void  goToActivity2(){
         Intent intent=new Intent(this,MainActivity3.class);
         startActivity(intent);
     }
+
 }
