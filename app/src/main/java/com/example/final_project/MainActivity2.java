@@ -48,6 +48,10 @@ public class MainActivity2 extends AppCompatActivity {
             return true;
         }
     };
+    public void clickSetting(View view){
+        Intent intent=new Intent(this,MainSetting.class);
+        startActivity(intent);
+    }
     public void create_food(View view){
         goToActivity2();
     }

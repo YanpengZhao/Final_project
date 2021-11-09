@@ -31,6 +31,22 @@
             android:name=".MainActivity2"
             android:exported="true" />
         <activity
+            android:name=".MainSetting"
+            android:exported="true" />
+        <activity
+            android:name=".settingFeedback"
+            android:exported="true" />
+        <activity
+            android:name=".settingProfile"
+            android:exported="true" />
+        <activity
+            android:name=".settingNotification"
+            android:exported="true" />
+        <activity
+            android:name=".settingPrivate"
+            android:exported="true" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
