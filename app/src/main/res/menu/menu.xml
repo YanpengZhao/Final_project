@@ -16,6 +16,11 @@
         android:id="@+id/graph"
         android:title="Graph"
         android:icon="@drawable/ic_baseline_bar_chart_24"/>
+    <item
+        android:id="@+id/friend"
+        android:title="Friend"
+        android:icon="@drawable/ic_baseline_group_24"/>
+
 
 
 </menu>

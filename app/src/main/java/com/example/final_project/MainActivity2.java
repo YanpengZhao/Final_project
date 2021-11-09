@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -17,7 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         bottomNavigationView=findViewById(R.id.bottomnav);
         bottomNavigationView.setOnItemSelectedListener(bottomnavFunction);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new HomeFragment()).commit();
@@ -38,6 +39,8 @@ public class MainActivity2 extends AppCompatActivity {
                     break;
                 case R.id.graph:
                     fragment=new GraphFragment();
+                case R.id.friend:
+                    fragment=new FriendFragment();
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
             return true;

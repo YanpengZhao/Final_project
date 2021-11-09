@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     public void clickFunction(View view) {
         EditText myTextField = (EditText) findViewById(R.id.EditText1);
         EditText password = (EditText) findViewById(R.id.EditText2);
-        SharedPreferences sharePreferences = getSharedPreferences("com.example.lab5", Context.MODE_PRIVATE);
+        SharedPreferences sharePreferences = getSharedPreferences("com.example.final_project", Context.MODE_PRIVATE);
         String str = myTextField.getText().toString();
         String pass = password.getText().toString();
         sharePreferences.edit().putString("username", str).apply();
